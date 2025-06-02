@@ -56,3 +56,20 @@ gatherUsageStats = true
 # Default: whatever value is set in server.port.
 serverPort = 80
 
+[server]
+headless = true
+enableCORS = false
+port = 8501  # recommended default unless you need port 80
+serverAddress = "0.0.0.0"  # allows external access
+
+[runner]
+magicEnabled = true
+
+[logger]
+level = "info"  # 'debug' is noisy for production
+
+[global]
+showWarningOnDirectExecution = false
+
+[browser]
+gatherUsageStats = false
